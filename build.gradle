@@ -22,6 +22,11 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
 
+task(runMain, dependsOn: 'classes', type: JavaExec) {
+    main = 'com.example.Main'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
 test {
     useJUnitPlatform()
 }
