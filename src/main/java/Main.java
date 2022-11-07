@@ -32,8 +32,7 @@ public class Main {
         if (countries.size() > 0) {
 
             CountryInfo countryInfo = countries.get(0);
-            System.out.println(countryInfo);
+            log.debug("Country Info: {}", countryInfo);
         }
-//        log.debug("Size {}", countries.size());
     }
 }
