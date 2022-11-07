@@ -11,6 +11,13 @@ repositories {
 
 dependencies {
 
+    implementation 'org.projectlombok:lombok:1.18.24'
+    implementation 'ch.qos.logback:logback-classic:1.2.6'
+
+    implementation 'io.github.openfeign:feign-okhttp:10.11'
+    implementation 'io.github.openfeign:feign-gson:10.11'
+    implementation 'io.github.openfeign:feign-slf4j:10.11'
+
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
